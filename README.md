@@ -191,18 +191,3 @@ If you find this project interesting and inspiring, please consider showing your
   <h2><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f496/512.webp" width="40" height="40"> Contributors</h2>
 </div>
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<div>
-<a href="https://github.com/Premkolte/AnimateHub/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Premkolte/AnimateHub" />
-</a>
-</div>
-
-Thank you for contributing to our project! Your help is greatly appreciated in making AnimateHub even better. 😊
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
