@@ -158,7 +158,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-8">
             {/* Starter Plan */}
             <motion.div
-              className="flex flex-col items-center p-8 rounded-lg  min-w-sm border border-gray-200"
+              className="flex flex-col items-center p-8 rounded-lg  min-w-sm border border-gray-300"
               whileHover={{ scale: 1.05 }}
             >
               <div>
@@ -196,7 +196,7 @@ const HomePage = () => {
 
             {/* Pro Plan */}
             <motion.div
-              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-200"
+              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-300"
               whileHover={{ scale: 1.05 }}
             >
               <div>
@@ -241,7 +241,7 @@ const HomePage = () => {
 
             {/* New Pricing Section */}
             <motion.div
-              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-200"
+              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-300"
               whileHover={{ scale: 1.05 }}
             >
               <div>
