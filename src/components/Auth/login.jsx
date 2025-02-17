@@ -19,13 +19,13 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white p-6">
+    <div className="w-full flex flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-violet-400  via-violet-100 to-violet-400 text-black p-6">
       <BackButton />
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="bg-slate-900 p-8 rounded-lg shadow-lg max-w-sm w-full"
+        className="bg-gradient-to-br from-violet-400 via-gray-200 to-violet-400 p-8 rounded-lg shadow-lg max-w-sm w-full"
       >
         <h1 className="text-3xl font-extrabold mb-6 text-center">Login</h1>
         <form className="space-y-4">
@@ -36,7 +36,7 @@ const LoginPage = () => {
             <input
               type="email"
               id="email"
-              className="mt-1 w-full p-2 bg-gray-800 text-white rounded"
+              className="mt-1 w-full p-2 bg-gray-200 rounded outline-none border-gray-300 border"
               required
             />
           </div>
@@ -48,7 +48,7 @@ const LoginPage = () => {
               <input
                 type={passwordVisible ? "text" : "password"}
                 id="password"
-                className="mt-1 w-full p-2 bg-gray-800 text-white rounded"
+                className="mt-1 w-full p-2 bg-gray-200 rounded outline-none border-gray-300 border"
                 required
               />
               <button
@@ -62,7 +62,7 @@ const LoginPage = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-indigo-600 hover:bg-indigo-700 p-3 rounded-lg font-semibold"
+            className="w-full  p-3 rounded-lg font-semibold bg-gradient-to-br from-violet-500  to-violet-200 "
           >
             Login
           </button>
@@ -73,7 +73,7 @@ const LoginPage = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={handleGoogleSignIn}
-            className="w-full bg-white text-black flex items-center justify-center p-3 rounded-lg shadow-md hover:bg-gray-100"
+            className="w-full bg-gradient-to-br from-violet-400  to-violet-100 text-black flex items-center justify-center p-3 rounded-lg shadow-md hover:bg-gray-100"
           >
             <FcGoogle className="mr-2" />
             Sign in with Google

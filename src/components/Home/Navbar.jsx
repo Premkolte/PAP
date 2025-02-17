@@ -5,7 +5,7 @@ import DarkModeToggle from "../DarkModeToggle";
 import { FiMenu, FiX } from "react-icons/fi";
 import Logo from "./images/Animate_logo.png";
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, onChangeDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,52 +18,44 @@ const Navbar = () => {
 
   return (
     <motion.nav
-      className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 pt-1 shadow-lg fixed top-0 left-0 z-50"
+      className="w-full fixed top-0 left-0  dark:text-gray-300 border border-b-gray-200 z-50 bg-white bg-opacity-95"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-4 md:px-8">
-        <div className="flex justify-between items-center">
+      <div className="">
+        <div className="flex justify-between mr-8">
           {/* Logo Animation */}
-          <motion.div
-            className="text-lg md:text-xl lg:text-2xl font-bold tracking-wider flex items-center space-x-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            whileHover={{ scale: 1.1, rotate: 7 }}
-            whileTap={{ scale: 1.6 }}
+          <div
+            className="text-lg md:text-xl lg:text-2xl font-bold tracking-wider flex items-center justify-center "
+    
           >
             <Link
               to="/"
-              className="flex items-center space-x-2"
+              className="flex items-center "
               onClick={closeMenu}
             >
-              <motion.div
-                initial={{ scale: 2 }}
-                animate={{ scale: 1.2 }}
-                transition={{ duration: 0.2, delay: 0.3 }}
+              <div
               >
                 <img
-                  className="w-16 h-16 pt-2 pl-4"
+                  className="w-16 h-16 pt-2 pl-2 "
                   src={Logo}
                   alt="AnimateHub Logo"
                 />
-              </motion.div>
-              <span
-                className="font-gagalin bg-clip-text text-3xl font-bold 
-      text-white dark:text-gray-100"
+              </div>
+              <h1
+                className="font-sans text-2xl bg-clip-text text-gray-800 dark:text-gray-300"
               >
                 AnimateHub
-              </span>
+              </h1>
               <span className="md:hidden">
-                <DarkModeToggle />
+                <DarkModeToggle dark={isDarkMode} onChange={onChangeDarkMode}  />
               </span>
             </Link>
-          </motion.div>
+          </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex space-x-4 md:space-x-6 items-center">
+          <div className="hidden md:flex space-x-4 md:space-x-6 items-center font-semibold text-gray-700">
             {["Home", "Explore", "About", "Contact", "Login"].map((item) => (
               <motion.div
                 key={item}
@@ -71,7 +63,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Link to={`/${item.toLowerCase()}`} onClick={closeMenu}>
+                <Link to={item !== "Home"?(`/${item.toLowerCase()}`): (`/`)} onClick={closeMenu}>
                   {item}
                 </Link>
               </motion.div>
