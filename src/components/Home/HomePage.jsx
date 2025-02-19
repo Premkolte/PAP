@@ -81,7 +81,6 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} onChangeDarkMode={handleDarkModeChange}  />
       <ReactJoyride steps={steps} continuous={true} showProgress={true} showSkipButton={true} />
       <div className="w-full flex flex-col items-center justify-center min-h-screen text-gray-800 p-6 space-y-16 pt-24 bg-gray-200 ">
         <motion.div

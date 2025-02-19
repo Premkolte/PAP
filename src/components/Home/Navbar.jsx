@@ -27,7 +27,7 @@ const Navbar = ({ isDarkMode, onChangeDarkMode }) => {
         <div className="flex justify-between pr-8">
           {/* Logo Animation */}
           <div
-            className="text-lg md:text-xl lg:text-2xl font-bold tracking-wider flex items-center justify-center "
+            className="text-lg md:text-xl lg:text-2xl font-bold tracking-wider flex items-center justify-between "
     
           >
             <Link
@@ -48,7 +48,7 @@ const Navbar = ({ isDarkMode, onChangeDarkMode }) => {
               >
                 AnimateHub
               </h1>
-              <span className="md:hidden">
+              <span className="md:hidden fixed right-16">
                 <DarkModeToggle dark={isDarkMode} onChange={onChangeDarkMode}  />
               </span>
             </Link>
