@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import BackButton from "../BackButton";
 
 const PaymentPage = () => {
   const navigate = useNavigate();
@@ -18,8 +17,8 @@ const PaymentPage = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-violet-400  via-violet-100 to-violet-400 p-6">
-      <BackButton/>
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-violet-400  via-violet-100 to-violet-400">
+      
         <div className="bg-gradient-to-br from-violet-400 via-violet-200 to-violet-400  p-8 rounded-lg shadow-lg w-full max-w-md">
           <h2 className="text-3xl font-bold mb-6 text-center">Payment Details</h2>
           <form onSubmit={handlePayment}>

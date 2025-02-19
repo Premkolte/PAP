@@ -119,7 +119,7 @@ const HomePage = () => {
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.1 }}
-              className="border border-gray-200 text-gray-800 px-6 py-3 rounded-full text-lg font-semibold shadow-md "
+              className="border border-gray-400 border-opacity-30 bg-gray-100 text-gray-800 px-6 py-3 rounded-full text-lg font-semibold  "
               onClick={() => {
                 window.location.href =
                   "https://github.com/Premkolte/AnimateHub";
