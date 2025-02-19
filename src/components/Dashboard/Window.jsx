@@ -44,7 +44,6 @@ import ProfileCardSnippets from "../SnippetComponents/ProfileCardSnippets";
 import NeonButton from "../SnippetComponents/NeonButton";
 import ExpandingSearchBar from "../SnippetComponents/ExpandingSearchBar";
 
-
 function Window({ activeTab }) {
   const content = [
     // Please add your components alphabetically in both button and this file and in same palce for perfect rendering
@@ -93,13 +92,14 @@ function Window({ activeTab }) {
   ];
 
   return (
-    <div className="flex-1 p-8 bg-gradient-to-r from-violet-500 via-white-500 to-blue-500 text-white pt-20 md:pt-8 overflow-y-auto min-h-screen pt-4">
-      <h1 className="text-3xl font-extrabold mb-6 text-center">
+    <div className="flex-1 p-8 text-black pt-8 overflow-y-auto min-h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold mb-6 text-center">
         AnimateHub - A one place for all your Frontend CSS needs
       </h1>
       <div className="bg-white text-black p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         {content[activeTab]}
       </div>
+      
     </div>
   );
 }

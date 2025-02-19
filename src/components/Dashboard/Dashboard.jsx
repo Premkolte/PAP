@@ -64,7 +64,7 @@ function Dashboard() {
           </KBarAnimator>
         </KBarPositioner>
       </KBarPortal>
-      <div className="h-screen flex flex-row">
+      <div className="h-screen flex flex-row mt-16">
         <SideBar activeTab={activeTab} setActiveTab={setActiveTab} />
         <Window activeTab={activeTab} />
       </div>

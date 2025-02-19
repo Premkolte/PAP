@@ -73,7 +73,7 @@ const About = () =>  {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="relative flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-indigo-500 via-violet-500 to-fuchsia-500"
+      className="relative flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-indigo-500 via-violet-500 to-fuchsia-500 mt-16"
     >
       <BackButton />
 

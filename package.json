@@ -20,8 +20,12 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@google/generative-ai": "^0.14.0",
     "@shepherdpro/react": "^0.0.3",
+    "aceternity-ui": "^0.2.2",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
     "kbar": "^0.1.0-beta.45",
+    "mini-svg-data-uri": "^1.4.4",
+    "motion": "^12.4.4",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
     "react-copy-to-clipboard": "^5.1.0",
@@ -35,6 +39,7 @@
     "shepherd.js": "^13.0.1",
     "string-to-react-component": "^3.1.0",
     "styled-components": "^6.1.11",
+    "tailwind-merge": "^3.0.1",
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {

@@ -158,7 +158,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-12 mt-8">
             {/* Starter Plan */}
             <motion.div
-              className="flex flex-col items-center p-8 rounded-lg  min-w-sm border border-gray-300"
+              className="flex flex-col items-center p-8 rounded-lg  min-w-sm border border-gray-300 bg-gray-100"
               whileHover={{ scale: 1.05 }}
             >
               <div>
@@ -183,7 +183,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex justify-center mt-8">
                   <button
-                    className=" px-4 lg:px-10 py-2 border-violet-700 border hover:bg-violet-500 hover:bg-opacity-40 rounded-xl"
+                    className=" px-4 lg:px-10 py-2 border-violet-700 border  bg-violet-100 rounded-xl hover:bg-violet-400 hover:bg-opacity-40 "
                     onClick={() => {
                       navigate("/payment");
                     }}
@@ -192,11 +192,12 @@ const HomePage = () => {
                   </button>
                 </div>
               </div>
+              
             </motion.div>
 
             {/* Pro Plan */}
             <motion.div
-              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-300"
+              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-300 bg-gray-100"
               whileHover={{ scale: 1.05 }}
             >
               <div>
@@ -226,7 +227,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex justify-center mt-8">
                   <button
-                    className="px-4 lg:px-10 py-2 border-violet-700 border hover:bg-violet-500 hover:bg-opacity-40 rounded-xl"
+                    className=" px-4 lg:px-10 py-2 border-violet-700 border  bg-violet-100 rounded-xl hover:bg-violet-400 hover:bg-opacity-40 "
                     onClick={() => {
                       navigate("/payment");
                     }}
@@ -241,7 +242,7 @@ const HomePage = () => {
 
             {/* New Pricing Section */}
             <motion.div
-              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-300"
+              className="flex flex-col items-center dark:bg-slate-900 p-8 rounded-lg  min-w-sm border border-gray-300 bg-gray-100"
               whileHover={{ scale: 1.05 }}
             >
               <div>
@@ -273,7 +274,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex justify-center mt-8">
                   <button
-                    className="px-10 py-2 border-violet-700 border hover:bg-violet-500 hover:bg-opacity-40 rounded-xl"
+                    className=" px-4 lg:px-10 py-2 border-violet-700 border  bg-violet-100 rounded-xl hover:bg-violet-400 hover:bg-opacity-40 "
                     onClick={() => {
                       navigate("/payment");
                     }}

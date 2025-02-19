@@ -18,16 +18,16 @@ const PaymentPage = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white p-6">
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-violet-400  via-violet-100 to-violet-400 p-6">
       <BackButton/>
-        <div className="bg-slate-900 p-8 rounded-lg shadow-lg w-full max-w-md">
+        <div className="bg-gradient-to-br from-violet-400 via-violet-200 to-violet-400  p-8 rounded-lg shadow-lg w-full max-w-md">
           <h2 className="text-3xl font-bold mb-6 text-center">Payment Details</h2>
           <form onSubmit={handlePayment}>
-            <div className="mb-4">
-              <label className="block text-white">Card Holder Name</label>
+            <div className="mb-4 font-semibold">
+              <label className="block">Card Holder Name</label>
               <input
                 type="text"
-                className="w-full mt-2 p-2 border border-gray-300 rounded bg-gray-800 text-white"
+                className="w-full mt-2 p-2 bg-gray-200 rounded outline-none border-gray-300 border"
                 placeholder="John Doe"
                 value={cardHolder}
                 onChange={(e) => setCardHolder(e.target.value)}
@@ -35,10 +35,10 @@ const PaymentPage = () => {
               />
             </div>
             <div className="mb-4">
-              <label className="block text-white">Card Number</label>
+              <label className="block">Card Number</label>
               <input
                 type="text"
-                className="w-full mt-2 p-2 border border-gray-300 rounded bg-gray-800 text-white"
+                className="w-full mt-2 p-2 bg-gray-200 rounded outline-none border-gray-300 border"
                 placeholder="1234 5678 9012 3456"
                 value={cardNumber}
                 onChange={(e) => setCardNumber(e.target.value)}
@@ -47,10 +47,10 @@ const PaymentPage = () => {
             </div>
             <div className="flex space-x-4 mb-4">
               <div className="flex-1">
-                <label className="block text-white">Expiry Date</label>
+                <label className="block">Expiry Date</label>
                 <input
                   type="text"
-                  className="w-full mt-2 p-2 border border-gray-300 rounded bg-gray-800 text-white"
+                  className="w-full mt-2 p-2 bg-gray-200 rounded outline-none border-gray-300 border"
                   placeholder="MM/YY"
                   value={expiryDate}
                   onChange={(e) => setExpiryDate(e.target.value)}
@@ -58,10 +58,10 @@ const PaymentPage = () => {
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-white">CVV</label>
+                <label className="block">CVV</label>
                 <input
                   type="password"
-                  className="w-full mt-2 p-2 border border-gray-300 rounded bg-gray-800 text-white"
+                  className="w-full mt-2 p-2 bg-gray-200 rounded outline-none border-gray-300 border"
                   placeholder="123"
                   value={cvv}
                   onChange={(e) => setCvv(e.target.value)}
@@ -70,9 +70,9 @@ const PaymentPage = () => {
               </div>
             </div>
             <div className="mb-6">
-              <label className="block text-white">Payment Method</label>
+              <label className="block">Payment Method</label>
               <select
-                className="w-full mt-2 p-2 border border-gray-300 rounded bg-gray-800 text-white"
+                className="w-full mt-2 p-2 bg-gray-200 rounded outline-none border-gray-300 border"
                 value={paymentMethod}
                 onChange={(e) => setPaymentMethod(e.target.value)}
               >
@@ -84,7 +84,7 @@ const PaymentPage = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition"
+              className="w-full  p-3 rounded-lg font-semibold bg-gradient-to-br from-violet-500  to-violet-200 transition"
             >
               Pay Now
             </button>
